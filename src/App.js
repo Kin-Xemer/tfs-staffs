@@ -4,6 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import AppNavigation from "./AppNavigation";
 import HomePage from "./page/HomePage";
 import OrderPage from "./page/OrderPage";
+import MenuPage from './page/MenuPage';
+import ProfilePage from './page/ProfilePage/index';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/order" element={<OrderPage />} />
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </div>
   );
